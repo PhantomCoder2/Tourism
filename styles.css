@@ -51,6 +51,23 @@ header{
     background:#fff; 
 }
 /*NAVBAR ENDS*/
+/*SCROLL TOP*/
+#stop{
+    position:fixed;
+    z-index:99;
+    bottom:20px;
+    right:30px;
+    border-radius:50%;
+    color:white;
+    background-color:orange;
+    border:none;
+    width:30px;
+    height:30px;
+    display:none;
+}
+#stop:focus{
+    outline:none;
+}
 /*ABOUT*/
 .top{
     padding-top:50px;
@@ -94,6 +111,12 @@ header{
 }
 .place-about h4{
     font-size:18px;
+}
+.owl-nav{
+    display:none;
+}
+.owl-carousel .owl-theme:focus{
+    cursor:all-scroll;
 }
 /*SERVICES*/
 .services{
@@ -201,4 +224,103 @@ footer{
 .copyright{
     margin-top:20px;
     font-size:24px;
+}
+/*MEDIA QUERIES*/
+@media(min-width:1200px){
+
+}
+@media(min-width:992px) and (max-width:1199px){
+    .about h2{
+        padding-left:25px;
+    }
+    .about p{
+        padding-left:25px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .about-img img{
+        width:300px;
+    }
+    .about h2{
+        padding-top:40px;
+        font-size:40px;
+        padding-left:20px;
+    }
+    .about p{
+        font-size:20px;
+        padding-left:20px;
+    }
+    .card h4{
+        font-size:16px;
+        font-weight:bold;
+    }
+
+}
+@media(min-width:600px) and (max-width:767px){
+    .hr1{
+        display:block !important;
+    }
+    .about-trav{
+        margin-bottom:40px;
+    }
+    .contact-us{
+        margin-top:40px;
+        margin-bottom: 40px;
+    }
+    .place-about{
+        height:100%;
+    }
+}
+@media (min-width:441px) and (max-width:600px){
+    .hr1{
+        display:block !important;
+    }
+    .about-trav{
+        margin-bottom:40px;
+    }
+    .contact-us{
+        margin-top:40px;
+        margin-bottom: 40px;
+    }
+    .services{
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+}
+@media (max-width:440px){
+    .about-img img{
+        width:250px;
+    }
+    .about h2{
+        font-size:50px;
+    }
+    .about p{
+        font-size:18px; 
+    }
+    .hr1{
+        display:block !important;
+    }
+    .about-trav{
+        margin-bottom:40px;
+    }
+    .contact-us{
+        margin-top:40px;
+        margin-bottom: 40px;
+    }
+    .tour-pics{
+        margin:0px;
+    }
+    .footer-menu h5{
+        font-size:25px;
+    }
+    .footer-menu a{
+        font-size:20px;
+    }
+    .copyright{
+        font-size:20px;
+    }
+    .services{
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
 }

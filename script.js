@@ -1,3 +1,4 @@
+
 /*OWL CAROUSEL*/ 
 $('.owl-carousel').owlCarousel({
     loop:true,
@@ -21,3 +22,20 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+const mybtn= document.getElementById('stop');
+function scrollToTop(){
+    window.scroll({
+        top:0,
+        left:0,
+        behavior:'smooth'
+    });
+}
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybtn.style.display = "block";
+  } else {
+    mybtn.style.display = "none";
+  }
+}
